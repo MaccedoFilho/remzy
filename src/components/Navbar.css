@@ -1,0 +1,118 @@
+.navbar-container {
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(71, 85, 105, 0.3);
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 40px;
+  border: 1px solid rgba(71, 85, 105, 0.3);
+}
+
+.nav-pill {
+  text-decoration: none;
+  color: #94a3b8;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  position: relative;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.nav-pill:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-pill.active {
+  color: #fff;
+}
+
+.navbar-contact {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms ease;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  flex-shrink: 0;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar-contact:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    width: calc(100% - 1rem);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.5rem;
+  }
+  
+  .navbar {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .navbar-menu {
+    gap: 0.15rem;
+    padding: 0.15rem;
+  }
+  
+  .nav-pill {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.7rem;
+  }
+  
+  .navbar-contact {
+    display: none;
+  }
+  
+  .logo-text {
+    font-size: 1.1rem;
+  }
+} 
