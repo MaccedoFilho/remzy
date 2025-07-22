@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './FAQ.css'
+import remzyIcon from '../assets/remzy.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -133,7 +134,7 @@ const FAQ = () => {
         <div className="chat-container" ref={chatRef}>
           <div className="chat-header">
             <div className="bot-avatar">
-              <img src="/src/assets/remzy.png" alt="Remzy AI" />
+              <img src={remzyIcon} alt="Remzy AI" />
             </div>
             <div className="bot-info">
               <span className="bot-name">Remzy AI Assistant</span>
