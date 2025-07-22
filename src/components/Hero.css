@@ -30,6 +30,7 @@
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   letter-spacing: -0.02em;
+  opacity: 0;
 }
 
 .hero-description {
@@ -39,6 +40,8 @@
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   max-width: 480px;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .hero-button {
@@ -53,6 +56,8 @@
   transition: all 300ms ease;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   align-self: flex-start;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .hero-button:hover {
@@ -74,6 +79,7 @@
   perspective: 1000px;
   width: 300px;
   height: 300px;
+  opacity: 0;
 }
 
 .cube {

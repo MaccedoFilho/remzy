@@ -12,27 +12,25 @@ function Hero() {
   const cubeRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const tl = gsap.timeline({ delay: 1 })
+    const tl = gsap.timeline({ delay: 0.5 })
 
     if (titleRef.current) {
       titleRef.current.textContent = ''
       
-      gsap.set(titleRef.current, { opacity: 1 })
-      
       tl.to(titleRef.current, {
-        duration: 3,
+        opacity: 1,
+        duration: 0.3,
+        ease: "power3.out"
+      })
+      .to(titleRef.current, {
+        duration: 2.5,
         text: {
           value: "Transforme seu\nnegócio com\nInteligência Artificial",
           delimiter: ""
         },
         ease: "none"
-      })
+      }, "-=0.1")
     }
-
-    gsap.set([descriptionRef.current, buttonRef.current, cubeRef.current], {
-      opacity: 0,
-      y: 30
-    })
 
     tl.to(descriptionRef.current, {
       opacity: 1,

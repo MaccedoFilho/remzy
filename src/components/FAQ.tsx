@@ -133,7 +133,7 @@ const FAQ = () => {
         <div className="chat-container" ref={chatRef}>
           <div className="chat-header">
             <div className="bot-avatar">
-              <img src="/remzy-icon.png" alt="Remzy AI" />
+              <img src="/src/assets/remzy.png" alt="Remzy AI" />
             </div>
             <div className="bot-info">
               <span className="bot-name">Remzy AI Assistant</span>
