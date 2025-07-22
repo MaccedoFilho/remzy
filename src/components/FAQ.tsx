@@ -22,7 +22,7 @@ const FAQ = () => {
   const faqData = [
     {
       question: "Quanto tempo leva para implementar uma solução?",
-      answer: "Entre 2 a 6 semanas, dependendo da complexidade! Projetos simples como chatbots ficam prontos em 1-2 semanas, enquanto soluções mais complexas podem levar 2-4 semanas. Sempre mantemos você informado sobre o progresso."
+      answer: "Entre 1 a 4 semanas, dependendo da complexidade! Projetos simples como chatbots ficam prontos em 1-2 semanas, enquanto soluções mais complexas podem levar 2-4 semanas. Sempre mantemos você informado sobre o progresso."
     },
     {
       question: "Que tipos de dados vocês trabalham?",
@@ -34,7 +34,7 @@ const FAQ = () => {
     },
     {
       question: "Precisa alterar nosso sistema atual?",
-      answer: "Não precisa mexer em nada! ⚡ Nossas soluções se integram via API sem alterar sua infraestrutura. Trabalhamos como um complemento inteligente aos seus sistemas atuais, sem interrupções."
+      answer: "Não precisa mexer em nada! Nossas soluções se integram via API sem alterar sua infraestrutura. Trabalhamos como um complemento inteligente aos seus sistemas atuais, sem interrupções."
     },
     {
       question: "Qual o investimento necessário?",
@@ -42,7 +42,7 @@ const FAQ = () => {
     },
     {
       question: "Oferecem suporte após implementação?",
-      answer: "Claro! Suporte 24/7! Oferecemos atualizações contínuas, monitoramento de performance e melhorias baseadas no uso. Nosso relacionamento é de longo prazo para garantir sua evolução constante."
+      answer: "Claro! Suporte humanizado de seg-sex das 8:30 as 20:00! Oferecemos atualizações contínuas, monitoramento de performance e melhorias baseadas no uso. Nosso relacionamento é de longo prazo para garantir sua evolução constante."
     }
   ]
 
